@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://haoyuhsu.github.io/Unified-LDM/"><img alt="Project page" src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Page-1f4a8a"></a>
   <img alt="Paper" src="https://img.shields.io/badge/Paper-coming%20soon-b31b1b">
-  <img alt="Code" src="https://img.shields.io/badge/Code-coming%20soon-d1553c">
+  <!-- <img alt="Code" src="https://img.shields.io/badge/Code-coming%20soon-d1553c"> -->
 </p>
 
 <p align="center"><b>Three networks. One transformer.</b></p>
