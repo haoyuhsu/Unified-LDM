@@ -50,22 +50,22 @@ With the same parameter budget and training recipe, UNIFIED outperforms both the
 
 Against published models under 250M parameters, UNIFIED-S outperforms every pixel-space model of similar size, and UNIFIED-B has the lowest gFID of any model under 250M parameters, without auxiliary DINO features.
 
-| Size     | Method            | Networks        | No aux. info. | Diffuses in    | Params | gFID ↓   | IS ↑      |
-|----------|-------------------|-----------------|:-------------:|----------------|-------:|---------:|----------:|
-| ≤100M    | UNITE-T\*         | Gen. + Dec.     | ✓             | Dynamic latent |    61M |     3.00 |     272.4 |
-|          | **UNIFIED-T**     | Gen.            | ✓             | Dynamic latent |    62M | **2.78** | **280.1** |
-| 100–150M | JiT-B/16          | Gen.            | ✓             | Pixels         |   131M |     3.66 |     275.1 |
-|          | PixelREPA-B/16    | Gen. + VFM      | ✕             | Pixels         |   131M |     3.17 |     284.6 |
-|          | JiT-B/16 + RG     | Gen.            | ✓             | Pixels         |   131M |     2.96 |     251.1 |
-|          | UNITE-S\*         | Gen. + Dec.     | ✓             | Dynamic latent |   117M |     2.76 |     283.9 |
-|          | **UNIFIED-S**     | Gen.            | ✓             | Dynamic latent |   116M | **2.43** | **295.9** |
-| 150–250M | PixelU-B/16       | Gen. + VFM      | ✕             | Pixels         |   164M |     3.40 |     276.0 |
-|          | DSD               | Gen. + VFM      | ✕             | Dynamic latent |   205M |     3.35 |     255.0 |
-|          | REPA-B, two-stage | Gen. + AE + VFM | ✕             | Frozen latent  |   214M |     2.15 |     268.3 |
-|          | UNITE-B\*         | Gen. + Dec.     | ✓             | Dynamic latent |   217M |     2.23 |     282.1 |
-|          | **UNIFIED-B**     | Gen.            | ✓             | Dynamic latent |   215M | **2.08** | **314.4** |
+| Size     | Method            | Networks        | Diffuses in    | Params | gFID ↓   | IS ↑      |
+|----------|-------------------|-----------------|----------------|-------:|---------:|----------:|
+| ≤100M    | UNITE-T\*         | Gen. + Dec.     | Dynamic latent |    61M |     3.00 |     272.4 |
+|          | **UNIFIED-T**     | Gen.            | Dynamic latent |    62M | **2.78** | **280.1** |
+| 100–150M | JiT-B/16          | Gen.            | Pixels         |   131M |     3.66 |     275.1 |
+|          | PixelREPA-B/16    | Gen. + VFM      | Pixels         |   131M |     3.17 |     284.6 |
+|          | JiT-B/16 + RG     | Gen.            | Pixels         |   131M |     2.96 |     251.1 |
+|          | UNITE-S\*         | Gen. + Dec.     | Dynamic latent |   117M |     2.76 |     283.9 |
+|          | **UNIFIED-S**     | Gen.            | Dynamic latent |   116M | **2.43** | **295.9** |
+| 150–250M | PixelU-B/16       | Gen. + VFM      | Pixels         |   164M |     3.40 |     276.0 |
+|          | DSD               | Gen. + VFM      | Dynamic latent |   205M |     3.35 |     255.0 |
+|          | REPA-B, two-stage | Gen. + AE + VFM | Frozen latent  |   214M |     2.15 |     268.3 |
+|          | UNITE-B\*         | Gen. + Dec.     | Dynamic latent |   217M |     2.23 |     282.1 |
+|          | **UNIFIED-B**     | Gen.            | Dynamic latent |   215M | **2.08** | **314.4** |
 
-<sub>\* UNITE trained under our protocol. AE: pretrained autoencoder. VFM: pretrained vision foundation model (DINO). No aux. info.: ✓ if training uses no auxiliary pretrained representation, such as DINO features. Dynamic latent: a latent learned jointly with the generator.</sub>
+<sub>\* UNITE trained under our protocol. AE: pretrained autoencoder. VFM: pretrained vision foundation model (DINO). Dynamic latent: a latent learned jointly with the generator.</sub>
 
 ### Text-to-image
 
