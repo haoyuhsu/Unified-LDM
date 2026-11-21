@@ -1,0 +1,50 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Data, checkpoints, and outputs
+data/
+datasets/
+checkpoints/
+ckpts/
+pretrained/
+outputs/
+results/
+samples/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+
+# Logs and experiment tracking
+logs/
+wandb/
+runs/
+lightning_logs/
+*.log
+slurm-*.out
+
+# Claude Code
+.claude/settings.local.json
