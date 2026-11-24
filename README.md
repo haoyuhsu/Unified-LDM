@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://haoyuhsu.github.io/Unified-LDM/"><img alt="Project page" src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Page-1f4a8a"></a>
-  <img alt="Paper" src="https://img.shields.io/badge/Paper-coming%20soon-b31b1b">
+  <a href="https://arxiv.org/abs/2611.29064"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2611.29064-b31b1b"></a>
   <!-- <img alt="Code" src="https://img.shields.io/badge/Code-coming%20soon-d1553c"> -->
 </p>
 
@@ -71,7 +71,7 @@ The same recipe extends to text: swap the class embedding for a text encoder and
 </p>
 <p align="center"><sub>UNIFIED-B (218M) at 512×512, 50 Euler steps, guidance scale 6.0.</sub></p>
 
-See the [project page](https://haoyuhsu.github.io/Unified-LDM/) for the design path, compute budgets, and full text-to-image benchmarks.
+See the [paper](https://arxiv.org/abs/2611.29064) and the [project page](https://haoyuhsu.github.io/Unified-LDM/) for the design path, compute budgets, and full text-to-image benchmarks.
 
 ## 📦 Release
 
@@ -85,7 +85,7 @@ If you find this work useful, please consider citing:
 @article{hsu2026unified,
   title   = {Single-Transformer Latent Diffusion},
   author  = {Hsu, Hao-Yu and Wang, Shenlong and Schwing, Alexander G},
-  journal = {Under review},
+  journal = {arXiv preprint arXiv:2611.29064},
   year    = {2026}
 }
 ```
